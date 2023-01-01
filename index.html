@@ -18,26 +18,33 @@
 <body>
 	<header>
 
-		<!-------------------------Navigation bar ------------------------------->
-		<nav id="header-nav" class="navbar navbar-default">
-			<div class="container">
-				<div class="navbar-header">
-					<!----------- Logo section of header------------->
-					<a href="index.html" class="float-start d-none d-md-block d-lg-block">	<!--pull-left is replaced by float-start to push elements to align left. visible class is replaced by d-...-... with d-none means not visible on any size, d-md-block and d-lg-block mean that only visible in md and lg -->
-						<div id="logo-img"></div>
-					</a>
-					<!------------- Branding section of header----------->
-					<div class="navbar-brand">
-						<a href="index.html"><h1>David Chu's China Bistro</h1></a>
-						<p>
-							<img src="images/" alt="Kosher Certification"><span>Kosher Certified</span>
-						</p>
-					</div>
-				</div>
-				<!-------------Hamburger menu----------->
-				
-			</div>
-		</nav>
+		<!-------------------------Navigation bar------------------------------->
+    	<nav id="header-nav" class="navbar navbar-default">
+      		<div class="container">
+      			<!-----------Header of navigation bar----------->
+        		<div class="navbar-header">
+        			<!-----------Logo------------->
+          			<a href="index.html" class="pull-left visible-md visible-lg">
+            			<div id="logo-img"></div>
+          			</a>
+          			<!-----------Brand------------->	
+          			<div class="navbar-brand">
+            			<a href="index.html"><h1>David Chu's China Bistro</h1></a>
+            				<p>
+              					<img src="images/star-k-logo.png" alt="Kosher certification">
+              					<span>Kosher Certified</span>
+            				</p>
+          			</div>
+          			<!-----------Hamburger menu------------->
+          			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            			<span class="sr-only">Toggle navigation</span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+          			</button>
+        		</div>
+      		</div>
+    	</nav>
 	</header>
 
 
