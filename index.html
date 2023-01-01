@@ -7,28 +7,46 @@
 	<title>David Chu's China Bistro</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 	<style> @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap'); </style>
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<style> @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap'); </style>
 </head>
 
 
 <body>
 	<header>
+
+		<!-------------------------Navigation bar ------------------------------->
 		<nav id="header-nav" class="navbar navbar-default">
 			<div class="container">
 				<div class="navbar-header">
-					<a href="index.html" class="">
-						<div id="logo-img" alt="Logo image"></div>
+					<!----------- Logo section of header------------->
+					<a href="index.html" class="float-start d-none d-md-block d-lg-block">	<!--pull-left is replaced by float-start to push elements to align left. visible class is replaced by d-...-... with d-none means not visible on any size, d-md-block and d-lg-block mean that only visible in md and lg -->
+						<div id="logo-img"></div>
+					</a>
+					<!------------- Branding section of header----------->
+					<div class="navbar-brand">
+						<a href="index.html"><h1>David Chu's China Bistro</h1></a>
+						<p>
+							<img src="images/" alt="Kosher Certification"><span>Kosher Certified</span>
+						</p>
+					</div>
 				</div>
+				<!-------------Hamburger menu----------->
+				
 			</div>
 		</nav>
-
 	</header>
 
 
 
-	<script src="js/jquery-3.6.3.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/script.js"></script>
+
+
+<!-- jQuery (Bootstrap JS plugins depend on it) -->
+  	<script src="js/jquery-3.6.3.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+  	<script src="js/script.js"></script>
 </body>
 </html>
