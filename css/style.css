@@ -121,6 +121,36 @@ body{
 	margin-top: -30px;
 }
 
+/*-----------------------------Footer------------------------------*/
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+.panel-footer div.row {
+  	margin-bottom: 35px;
+}
+#hours, #address {
+  	line-height: 2;
+}
+#hours > span, #address > span {
+  	font-size: 1.3em;
+}
+#address p {
+  	color: #557c3e;
+  	font-size: .8em;
+  	line-height: 1.8;
+}
+#testimonials {
+  	font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  	margin-top: 25px;
+}
+
+
 /*-----------------------Large screen------------------------------*/
 @media (min-width: 1200px) {
 	.container .jumbotron {
@@ -180,10 +210,6 @@ body{
 		font-size: 1em;
 		margin-right: 5px;
 	}
-	.container .jumbotron {
-		margin-top: 30px;
-		padding: 0;
-	}
 	#call-btn > a {
     	font-size: 1.5em;
     	display: block;
@@ -199,9 +225,23 @@ body{
     	letter-spacing: .1em;
     	text-transform: uppercase;
   	}
+  	.container .jumbotron {
+		margin-top: 30px;
+		padding: 0;
+	}
   	#menu-tile, #specials-tile{
   		width: 360px;
   		margin: 0 auto 15px; /*top sides bottom*/
+  	}
+  	.panel-footer section {
+    	margin-bottom: 30px;
+    	text-align: center;
+  	}
+  	.panel-footer section:nth-child(3) {
+    	margin-bottom: 0; /* margin already exists on the whole row */
+  	}
+  	.panel-footer section hr {
+    	width: 50%;
   	}
 }
 
@@ -215,4 +255,4 @@ body{
     	width: 280px;
     	margin: 0 auto 15px;
   	}
-}
+  }
